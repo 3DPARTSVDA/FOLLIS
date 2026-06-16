@@ -14,12 +14,12 @@
 }
 
 body{
-    background: linear-gradient(135deg,#0f172a,#1e293b);
+    background:#ffffff;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:white;
+    color:#111111;
     padding:20px;
 }
 
@@ -29,14 +29,14 @@ body{
     text-align:center;
 }
 
-h1{
-    font-size:4rem;
-    margin-bottom:15px;
-    letter-spacing:3px;
+.logo{
+    width:250px;
+    max-width:80%;
+    margin-bottom:20px;
 }
 
 .subtitle{
-    color:#cbd5e1;
+    color:#666;
     margin-bottom:50px;
     font-size:1.2rem;
 }
@@ -48,17 +48,17 @@ h1{
 }
 
 .card{
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,0.12);
+    background:#ffffff;
+    border:1px solid #e5e7eb;
     border-radius:20px;
     padding:35px;
     transition:all .3s ease;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.35);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 .icon{
@@ -69,17 +69,18 @@ h1{
 .card h2{
     margin-bottom:10px;
     font-size:1.8rem;
+    color:#111;
 }
 
 .card p{
-    color:#cbd5e1;
+    color:#666;
     margin-bottom:25px;
 }
 
 .btn{
     display:inline-block;
-    background:#d4af37;
-    color:#111827;
+    background:#000000;
+    color:white;
     text-decoration:none;
     padding:14px 28px;
     border-radius:12px;
@@ -88,12 +89,13 @@ h1{
 }
 
 .btn:hover{
+    background:#222222;
     transform:scale(1.05);
 }
 
 footer{
     margin-top:40px;
-    color:#94a3b8;
+    color:#999;
     font-size:14px;
 }
 </style>
@@ -103,7 +105,7 @@ footer{
 
 <div class="container">
 
-<h1>🍽️ FOLLIS</h1>
+<img src="logo-follis.png" alt="FOLLIS" class="logo">
 
 <p class="subtitle">
 Seleziona la lingua / Select your language
@@ -112,18 +114,18 @@ Seleziona la lingua / Select your language
 <div class="cards">
 
 <div class="card">
-    <div class="icon">🇮🇹</div>
-    <h2>Menu Italiano</h2>
-    <p>Consulta il menu in lingua italiana.</p>
+    <div class="icon"></div>
+    <h2>ITA</h2>
+    <p>Consulta il menu in italiano.</p>
     <a class="btn" href="ITALIANO.pdf" target="_blank">
         Apri Menu
     </a>
 </div>
 
 <div class="card">
-    <div class="icon">🇪🇳</div>
-    <h2>English Menu</h2>
-    <p>See the menu in English.</p>
+    <div class="icon"></div>
+    <h2>ENG</h2>
+    <p>View the menu in English.</p>
     <a class="btn" href="INGLESE.pdf" target="_blank">
         Open Menu
     </a>
@@ -132,7 +134,7 @@ Seleziona la lingua / Select your language
 </div>
 
 <footer>
-© FOLLIS Restaurant
+© FOLLIS - Panetteria Pasticceria Bar
 </footer>
 
 </div>
